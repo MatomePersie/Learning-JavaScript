@@ -1,0 +1,23 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <p>welcome. please log in</p>
+    <form>
+      <label for="usernameInput">Username : </label
+      ><input type="text" id="usernameInput" /><br />
+      <label for="passwordInput">Password : </label
+      ><input type="password" id="passwordInput" />
+      <p id="message"></p>
+      <br /><br />
+      <a href="#">Log in</a>
+    </form>
+    <script>
+        function veryUser(){
+            var username=document.getElementById("usernameInput").value;
+            var password=document.getElementById("passwordInput").value;
+        }
+    </script>
+  </body>
+</html>
