@@ -11,13 +11,27 @@
       ><input type="password" id="passwordInput" />
       <p id="message"></p>
       <br /><br />
-      <a href="#">Log in</a>
+      <a href="#" onclick="veryUser()">Log in</a>
     </form>
     <script>
-        function veryUser(){
-            var username=document.getElementById("usernameInput").value;
-            var password=document.getElementById("passwordInput").value;
+      function veryUser() {
+        var username = document.getElementById("usernameInput").value;
+        var password = document.getElementById("passwordInput").value;
+
+        checkUserCreds(username,password);
+      }
+      function checkUserCreds(username, password) {
+        var systemusername = "Matome";
+        var systempassword = "1234";
+
+
+        if(username == systemusername&& password ==systempassword){
+            document.getElementById("message").innerHTML="Correct. Loggin you in...";
         }
+        else{
+            document.getElementById("message").innerHTML="Incorrect. Try again"; 
+        }
+      }
     </script>
   </body>
 </html>
